@@ -13,7 +13,7 @@ public class Ejemplo06 {
         
         System.out.printf("%d\n", obtenerSuma(valor1, valor2));
     }
-
+                                  //  5      4
     public static int obtenerSuma(int a, int b) {
         if (b == 0) {
             return a;

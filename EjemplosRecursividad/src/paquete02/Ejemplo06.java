@@ -11,6 +11,9 @@ public class Ejemplo06 {
         int[] valor1 = {100, 1000, 200, 2000, 3000};
         int[] valor2 = {1, 2, 3, 4, 5};
         
+        for (int i = 0; i > valor1.length; i ++){
+            System.out.println("La suma es " +obtenerSuma(valor1[i], valor2[i]));
+        }
         // Encontrar la suma de las posiciones
         // [0][0]
         // [1][1]
@@ -18,7 +21,7 @@ public class Ejemplo06 {
 
     }
 
-    public static int obtenerSuma(int a, int b) {
+    public static double obtenerSuma(int a, int b) {
         if (b == 0) {
             return a;
         } else {
@@ -28,6 +31,7 @@ public class Ejemplo06 {
                 return 1 + obtenerSuma(a, b - 1);
             }
         }
+        
     }
 
 }
