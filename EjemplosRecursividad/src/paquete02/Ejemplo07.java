@@ -10,24 +10,22 @@ public class Ejemplo07 {
         int[] valores = {2, 3, 4, 5, 6, 7, 8};
         int[] potencias = {2, 3};
 
-        for (int i = 0; i > valores.length; i++) {
-            for (int j = 0; j > potencias.length; j++) {
+        // Por cada posición del arreglo valores
+        // obtener su potencia, en función de los valores
+        // del arreglo potencias
+        // Ejemplo:
+        // posición 0 de valores es 2
+        // se debería presentar el resultado de
+        // 2 elevado a la potencia 2 (cuadrado)
+        // 2 elevado a la potencia 3 (cubo)
+        for (int i = 0; i < valores.length; i++) {
+            System.out.printf("%d elevado a la potencia %d = %d\n"
+                    + "%d elevado a la potencia %d = %d\n", valores[i],
+                    potencias[0], obtenerPotencia(valores[i], potencias[0]),
+                    valores[i], potencias[1], obtenerPotencia(valores[i],
+                            potencias[1]));
 
-                System.out.printf("%d elevado a la potencia %d es %d\n",
-                        valores[i],
-                        potencias[j],
-                        obtenerPotencia(valores[i], potencias[j]));
-                // Por cada posición del arreglo valores
-                // obtener su potencia, en función de los valores
-                // del arreglo potencias
-                // Ejemplo:
-                // posición 0 de valores es 2
-                // se debería presentar el resultado de
-                // 2 elevado a la potencia 2 (cuadrado)
-                // 2 elevado a la potencia 3 (cubo)
-            }
         }
-
     }
 
     public static int obtenerPotencia(int base, int exponente) {
